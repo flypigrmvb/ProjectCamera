@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6221" systemVersion="14D87h" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="Eda-Vg-Qoc">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6213"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="L5q-as-T2h">
+            <objects>
+                <navigationController id="Eda-Vg-Qoc" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="GDi-yo-0O4">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="QRX-dV-Qlj" kind="relationship" relationship="rootViewController" id="hte-FT-hcg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BU4-yI-zPj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-205.86666666666667" y="100.34666666666666"/>
+        </scene>
+        <!--Initial-->
+        <scene sceneID="AvY-Ed-Mqp">
+            <objects>
+                <viewController storyboardIdentifier="initial" useStoryboardIdentifierAsRestorationIdentifier="YES" id="QRX-dV-Qlj" customClass="TGInitialViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="f7u-Ek-YX3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Photo area" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yqs-4U-p9y">
+                                <rect key="frame" x="85" y="273" width="151" height="20.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selected date:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="zG4-yM-aLg">
+                                <rect key="frame" x="16" y="74" width="111" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="0Sl-Ew-By0">
+                                <rect key="frame" x="25" y="406" width="108" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="add to clendrier">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="addTheDateToTheClendrier:" destination="QRX-dV-Qlj" eventType="touchUpInside" id="pK1-lQ-G5v"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="NsV-sy-B8z">
+                                <rect key="frame" x="250" y="406" width="44" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Album">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="Album:" destination="QRX-dV-Qlj" eventType="touchUpInside" id="Bqf-8m-qGe"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Not selected" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="KKx-i8-WUV">
+                                <rect key="frame" x="127" y="74" width="167" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="ZSx-0Y-doC">
+                                <rect key="frame" x="0.0" y="64" width="320" height="418"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="XlE-ML-irr">
+                                <rect key="frame" x="16" y="108" width="123" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Show Date Picker">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showDatePicker:" destination="QRX-dV-Qlj" eventType="touchUpInside" id="Gtd-bN-Mao"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" id="2vz-WL-Max" userLabel="Options View">
+                                <rect key="frame" x="0.0" y="482" width="320" height="86"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="i43-vW-xQp">
+                                        <rect key="frame" x="0.0" y="18" width="150" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Take photo">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="takePhotoTapped" destination="QRX-dV-Qlj" eventType="touchUpInside" id="PjQ-Uy-FyH"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="UFJ-1L-GNb">
+                                        <rect key="frame" x="132" y="28" width="65" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Weather">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="SendRequestToGetJsonData:" destination="QRX-dV-Qlj" eventType="touchUpInside" id="6vc-nX-Mqx"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.9647059440612793" green="0.9647059440612793" blue="0.9647059440612793" alpha="1" colorSpace="deviceRGB"/>
+                            </view>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Max：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="O9K-zX-OQx">
+                                <rect key="frame" x="177" y="370" width="117" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Min：" lineBreakMode="headTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="go5-pS-Onm">
+                                <rect key="frame" x="16" y="370" width="136" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="84A84212-3A3D-4218-B2C7-87217427E033" id="Dde-J9-Lqr">
+                                <rect key="frame" x="115" y="364" width="37" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="FSK-ic-rVq">
+                                <rect key="frame" x="85" y="324" width="185" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Initial" id="w4g-fM-4fa"/>
+                    <connections>
+                        <outlet property="TodayDate" destination="FSK-ic-rVq" id="1dZ-17-2uB"/>
+                        <outlet property="TodayImage" destination="Dde-J9-Lqr" id="9gi-T8-xQE"/>
+                        <outlet property="TodayMax" destination="O9K-zX-OQx" id="dIj-oW-tfV"/>
+                        <outlet property="TodayMin" destination="go5-pS-Onm" id="OsK-Fn-z62"/>
+                        <outlet property="dateLabel" destination="KKx-i8-WUV" id="uzM-P8-E1M"/>
+                        <outlet property="photoView" destination="ZSx-0Y-doC" id="KhV-t5-DCf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="krk-pN-rQY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="154" y="84"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="84A84212-3A3D-4218-B2C7-87217427E033" width="175" height="135">
+            <mutableData key="keyedArchiveRepresentation">
+YnBsaXN0MDDUAQIDBAUGOzxYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK0HCBMU
+GR4fJSYsLzU4VSRudWxs1QkKCwwNDg8QERJWTlNTaXplViRjbGFzc1xOU0ltYWdlRmxhZ3NWTlNSZXBz
+V05TQ29sb3KAAoAMEiTAAACAA4AKWnsxNzUsIDEzNX3SFQoWGFpOUy5vYmplY3RzoReABIAJ0hUKGhii
+GxyABYAGgAkQBdMgCiEiIyRXTlMuYmFzZVtOUy5yZWxhdGl2ZYAAgAiAB18QgWZpbGU6Ly8vQXBwbGlj
+YXRpb25zL1hjb2RlLUJldGEuYXBwL0NvbnRlbnRzL1BsdWdJbnMvSURFSW50ZXJmYWNlQnVpbGRlcktp
+dC5pZGVwbHVnaW4vQ29udGVudHMvUmVzb3VyY2VzL0lCTWlzc2luZ0ltYWdlR2x5cGgudGlmZtInKCkq
+WiRjbGFzc25hbWVYJGNsYXNzZXNVTlNVUkyiKStYTlNPYmplY3TSJygtLldOU0FycmF5oi0r0zAxCjIz
+NFdOU1doaXRlXE5TQ29sb3JTcGFjZUQwIDAAEAOAC9InKDY3V05TQ29sb3KiNivSJyg5OldOU0ltYWdl
+ojkrXxAPTlNLZXllZEFyY2hpdmVy0T0+VHJvb3SAAQAIABEAGgAjAC0AMgA3AEUASwBWAF0AZABxAHgA
+gACCAIQAiQCLAI0AmACdAKgAqgCsAK4AswC2ALgAugC8AL4AxQDNANkA2wDdAN8BYwFoAXMBfAGCAYUB
+jgGTAZsBngGlAa0BugG/AcEBwwHIAdAB0wHYAeAB4wH1AfgB/QAAAAAAAAIBAAAAAAAAAD8AAAAAAAAA
+AAAAAAAAAAH/A
+</mutableData>
+        </image>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+    <color key="tintColor" red="1" green="0.35686275360000003" blue="0.0039215688589999999" alpha="1" colorSpace="deviceRGB"/>
+</document>

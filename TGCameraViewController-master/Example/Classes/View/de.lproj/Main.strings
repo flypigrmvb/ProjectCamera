@@ -1,0 +1,8 @@
+/* Class = "IBUINavigationItem"; title = "Initial"; ObjectID = "w4g-fM-4fa"; */
+"w4g-fM-4fa.title" = "Anfangs-";
+
+/* Class = "IBUILabel"; text = "Photo area"; ObjectID = "yqs-4U-p9y"; */
+"yqs-4U-p9y.text" = "Fotobereich";
+
+/* Class = "IBUIButton"; normalTitle = "Take photo"; ObjectID = "i43-vW-xQp"; */
+"i43-vW-xQp.normalTitle" = "Nehmen Sie Foto";
